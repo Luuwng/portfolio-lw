@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Portfolio Wang Lucie</title>
+	<meta name="description" content="Bloom - Minimal and Clean Portfolio Template">
+
+
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600%7CPoppins:600" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<header>
+		<div class="container">
+			<a href="index.html" class="logo">Lucie.</a>
+			<a href="#" onclick="openNav()" class="nav-button"><span class="ti-menu"></span></a>
+			<nav id="navigation">
+				<a href="javascript:void(0)" onclick="closeNav()" class="close-btn"><span class=" ti-close"></span></a>
+				<ul class="main-menu">
+					<li><a href="Lucie-Wang-CV.pdf" target="_blank">CV</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+	<main>
+
+		<div class="container-full">
+
+			<div class="hero-portfolio">
+				<h1><span class="brown-text">Lucie Wang</span></h1>
+				<p><strong>PORTFOLIO</strong></p>
+				<br>
+				<br>
+				<p>Étudiante en web & communication visuelle et notamment vidéaste et photographe amatrice passionnée
+					par la création visuelle. Mon objectif est de raconter des histoires inspirantes à travers l'art
+					visuel et de captiver le public. Mon portfolio est le reflet de mon voyage créatif, où je mets en
+					lumière une collection diversifiée de projets, allant de l'animation vidéo aux illustrations aux
+					images photographiques et aux vidéos.</p>
+			</div>
+
+			<div class="works_3-columns">
+
+				<a href="photographies.html">
+					<div class="works-item">
+						<img src="images/mismatch1.jpg" alt="Photos boxe tournage">
+						<div class="works-item-overlay">
+							<div class="works-item-info">
+								<h3 class="works-info-title">Photographies</h3>
+								<p class="works-info-category">Prise de vue</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="réalisations.html">
+					<div class="works-item">
+						<img src="images/pexels-lê-minh-3062543.jpg" alt="Starbucks">
+						<div class="works-item-overlay">
+							<div class="works-item-info">
+								<h3 class="works-info-title">Réalisation vidéo</h3>
+								<p class="works-info-category">Projet vidéo</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="illustrations.html">
+					<div class="works-item">
+						<img src="images/Fichier 14@4x-100.jpg" alt="Logo LW">
+						<div class="works-item-overlay">
+							<div class="works-item-info">
+								<h3 class="works-info-title">Illustrations</h3>
+								<p class="works-info-category">Illustrator</p>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="animations.html">
+					<div class="works-item">
+						<img src="images/pexels-cottonbro-cg-studio-8833465.jpg" alt="L">
+						<div class="works-item-overlay">
+							<div class="works-item-info">
+								<h3 class="works-info-title">Animations</h3>
+								<p class="works-info-category">After effect</p>
+							</div>
+						</div>
+					</div>
+				</a>
+
+
+
+				<a href="créations.html">
+					<div class="works-item">
+						<img src="images/pexels-canvy-mockups-205316.jpg" alt="Ordinateur">
+						<div class="works-item-overlay">
+							<div class="works-item-info">
+								<h3 class="works-info-title">Créations</h3>
+								<p class="works-info-category">Figma</p>
+							</div>
+						</div>
+					</div>
+				</a>
+
+
+
+				<a href="Montages.html">
+					<div class="works-item">
+						<img src="images/pexels-amar-preciado-11063289.jpg" alt="Logiciel">
+						<div class="works-item-overlay">
+							<div class="works-item-info">
+								<h3 class="works-info-title">Montages</h3>
+								<p class="works-info-category">Premiere pro</p>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="UIdesign.html">
+					<div class="works-item">
+						<img src="images/pexels-picjumbocom-196645.jpg" alt="UI design">
+						<div class="works-item-overlay">
+							<div class="works-item-info">
+								<h3 class="works-info-title">UI design</h3>
+								<p class="works-info-category">Branding</p>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="Images.html">
+					<div class="works-item">
+						<img src="images/pexels-alex-andrews-1983037.jpg" alt="Objectif photo">
+						<div class="works-item-overlay">
+							<div class="works-item-info">
+								<h3 class="works-info-title">Création d'image</h3>
+								<p class="works-info-category">Photoshop</p>
+								</p>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<div class="clearfix"></div>
+			</div>
+
+	</main>
+
+
+
+	<footer>
+		<a href="#top" id="top">↑</a>
+		<div id="top-anchor"></div>
+
+		<script>
+
+			window.onscroll = function () {
+				toggleTopButton();
+			};
+
+			function toggleTopButton() {
+				var topButton = document.getElementById("top");
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					topButton.style.display = "block";
+				} else {
+					topButton.style.display = "none";
+				}
+			}
+
+
+			document.getElementById("top").addEventListener("click", function () {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			});
+		</script>
+		<div class="footer-content">
+			<div class="container">
+				<ul class="social-links">
+					<a href="https://www.linkedin.com/feed/" class="logo" target="_blank">in.</a>
+				</ul>
+			</div>
+		</div>
+
+	</footer>
+
+
+
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
